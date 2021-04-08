@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>您本次的考試資料</title>
+</head>
+<h3>您本次的考試資料</h3>
+<table border="1" width="200" cellpadding="5">
+    {% for key, value in result.items() %}
+    <tr>
+       <th> {{ key }} </th>
+       <td> {{ value }} </td>
+    </tr>
+    {% endfor %}
+</table>
+</html>
+
