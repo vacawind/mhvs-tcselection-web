@@ -57,4 +57,5 @@ def confirm():
         return render_template('error_info.html')
 
 
-app.run(port=3000)
+if __name__ == "__main__":  # 當user載入SDK時, 有需要才執行, 而不是一載入就執行程式
+    app.run()  # 立刻啟動伺服器
